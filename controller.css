@@ -1,0 +1,155 @@
+.controls {
+	background-color: lightgreen;
+	border: 2px solid white;
+	border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+	left: -1em;
+	padding: 1em;
+	position: fixed;
+	text-align: center;
+	top: 2em;
+	width: 15em;
+
+	-webkit-box-shadow: 10px 10px 87px -12px rgba(102,199,94,1);
+	-moz-box-shadow: 10px 10px 87px -12px rgba(102,199,94,1);
+	box-shadow: 10px 10px 87px -12px rgba(102,199,94,1);
+}
+.controls .box {
+	background-color: palegreen;
+	border: 1px solid silver;
+	font-weight: bold;
+	padding: 0.25em 1em;
+}
+.controls .title {
+	margin-bottom: 1em;	
+}
+
+.content {
+	padding: 1em 20% 1em 1em;
+	position: relative;
+	margin-bottom: 100%;
+	margin-left: 16em;
+	width: calc(100% - 18em);
+}
+.content .card {
+	background-color: lightgreen;
+	border: 2px solid white;
+	padding: 1em;
+	position: relative;
+}
+.content div.card:not(:first-of-type) {
+	margin-top: 1em;	
+}
+.content div.card:first-of-type {
+	margin-top: 0;
+}
+
+.card-selector {
+	border-right: white;
+    border-right-width: 3;
+    border-right-style: solid;
+	left: -1em;
+	position: relative;
+	padding: 1em;
+}
+.card.selected .card-selector {
+	background-color: orange;
+	color: white;
+}
+.card:not(.selected) .card-selector .fa-map-pin {
+	display: none;
+}
+.card.selected .card-selector .fa-ellipsis-h {
+	display: none;
+}
+.card .title {
+	font-weight: bold;
+	position: relative;
+}
+.card .details,
+.card .options {
+	position: relative;
+    left: -1em;
+    top: calc(1em - 1px);
+    padding: 1em 1em 1em 4em;
+    border-top: 2px solid white;
+    width: calc(100% - 3em);
+}
+.card .details div {
+    min-height: 1.3em;
+}
+.card .anchor-point {
+	position: absolute;
+    top: -2em;	
+}
+
+.ctrl-btn {
+	cursor: pointer;
+}
+.ctrl-btn.disabled {
+	color: silver;
+	cursor: default;
+}
+.ctrl-btn .mid {
+	top: -0.2em;
+}
+
+.option-btn {
+    border: 2px solid white;
+    border-radius: 10px;	
+    color: white;
+	cursor: pointer;
+	display: inline-block;
+    padding: 0.25em 1em;
+}
+div.option-btn:not(:last-of-type) {
+	margin-right: 1em;	
+}
+.option-btn:not(.displays) {
+    background-color: green;	
+}
+.option-btn.displays {
+	background-color: orange;
+}
+.option-btn:hover {
+	background-color: white;
+	color: olivedrab;
+}
+
+.controls .block {
+	margin-top: 1.5em;
+}
+.controls div.block:first-of-type {
+	margin-top: 0;
+}
+.controls .block .ctrl {
+	background-color: orange;
+	border: 2px solid white;
+	border-radius: 10px;
+	color: black;
+	font-size: 1.5em;
+	padding: 0.25em;
+}
+.controls .block span.ctrl:not(:last-of-type) {
+	padding-right: 0.3em;
+}
+.controls .block .ctrl.disabled {
+	background-color: slategray;
+	border-color: green;
+	color: silver;
+}
+.controls .block .ctrl:not(.disabled):hover {
+	background-color: white;
+	color: olivedrab;
+}
+
+.pad-left-1em {
+	padding-left: 1em;
+}
+
+.bold {
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;
+}

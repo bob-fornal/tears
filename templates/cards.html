@@ -1,0 +1,215 @@
+<div class="note" card="start">
+	<h2>Spoiler ...</h2>
+	<div class="description">
+		<p>At it's core, JavaScript is a synchronous, blocking, single-threaded language.  This means that only one thing can happen at a time.</p>
+		<p>When people say that JavaScript is an <u>asynchronous</u> language, what they mean is that you can manipulate JavaScript to behave asynchronously.</p>
+	</div>
+
+	<h3>Boundaries of Asynchronicity</h3>
+	<ul class="fa-ul">
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>User Interactions</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Network IO</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Disk IO</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Inter-Process Communications</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Timers</li>
+	</ul>
+</div>
+
+<div class="note" card="overview">
+	<h2>Definitions</h2>
+	<ul class="fa-ul">
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Parallelism: multi-thread processing and scheduling (same time).</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Asynchronous: single-thread and event loop.</li>
+	</ul>
+	<h3>Managed by ...</h3>
+	<ul class="fa-ul">
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Concurrency: higher-level tasks that can occur withing the same time frame.</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Contention: multiple things need to occur at the same instant.</li>
+	</ul>
+</div>
+
+<div class="note" card="engine-details">
+	<h2>JavaScript Engine Details</h2>
+	<p>These are not a part of the JS Engine; they are included in Browser or NodeJS runtime environment:</p>
+	<ul class="fa-ul">
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>setTimeout</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Event Loop</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Web APIs</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Message Queue</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Task Queue</li>
+	</ul>
+</div>
+
+<div class="note" card="callback-hell">
+	<h2>Callback Hell</h2>
+	<h4>... leading to Promise Hell</h4>
+	<ul class="fa-ul">
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>"Pyramid of Doom"</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Inversion of Control: "later" version has control (when and if called)</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Cannot be Reasoned About</li>
+	</ul>
+	<h3>Considerations ...</h3>
+	<ul class="fa-ul">
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Coordination of Data</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Split Callbacks</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Error First</li>
+	</ul>
+</div>
+
+<div class="note" card="overview1" style="display: none;">
+	<h2>Overview</h2>
+	<ul class="fa-ul">
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Thought Exercise</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Synchronous Code</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Non Asynchronous Code</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Simple Network Code</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Complex Network Code</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>ES2015 Simple Promise Code</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>ES2015 Complex Promise Code</li>
+	</ul>
+	<p>(continued)</p>
+	<span class="stamp is-approved callback-hell">Callback Hell</span>
+</div>
+
+<div class="note" card="overview2" style="display: none;">
+	<h2>Overview</h2>
+	<p>(continued)</p>
+	<ul class="fa-ul">
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Generator Throttling Code</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>User Interaction Code</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Event Listeners</li>				
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Web Worker Code</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>Timing Code (Race Conditions)</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>setTimeout Timer</li>
+		<li><span class="fa-li"><i class="fas fa-circle small"></i></span>ES2017 Async/Await</li>
+	</ul>
+</div>
+
+<div class="note" id="thought-wrapper" card="thought-exercise" style="display: none;">
+	<h2>Thought Exercise</h2>
+	<p>
+		What will the following code do?
+	</p>
+	<span class="btn thought-btn" style="font-size: 20px;"><i class="far fa-file-code fa-3x"></i></span>
+	<p>
+		&gt; thought.start()<br/>
+		&gt; thought.end()
+	</p>
+
+	<p><button id="thought-button" class="thought-exercise hide">Click Me</button></p>
+</div>
+
+<div class="note" card="synchronous-code" style="display: none;">
+	<h2>Synchronous Code</h2>
+	<span class="btn synchronous-btn" style="font-size: 20px;"><i class="far fa-file-code fa-3x"></i></span>
+	<p>&gt; code1.first()</p>
+</div>
+
+<div class="note" card="non-asynchronous-code" style="display: none;">
+	<h2>Non Asynchronous Code</h2>
+	<p>Note: Show debugging here ...</p>
+	<span class="btn non-asynchronous-btn" style="font-size: 20px;"><i class="far fa-file-code fa-3x"></i></span>
+	<p>
+		&gt; code2.start()<br/>
+		&gt; code2.start(true)<br/>
+		&gt; code2.debugStart();
+	</p>
+</div>
+
+<div class="note" card="simple-network" style="display: none;">
+	<h2>Simple Network Code</h2>
+	<span class="btn simple-network-btn" style="font-size: 20px;"><i class="far fa-file-code fa-3x"></i></span>
+	<p>&gt; code3.start()</p>
+</div>
+
+<div class="note" card="complex-network" style="display: none;">
+	<h2>Complex Network Code</h2>
+	<span class="btn complex-network-btn" style="font-size: 20px;"><i class="far fa-file-code fa-3x"></i></span>
+	<p>&gt; code4.start()</p>
+</div>
+
+<div class="note" card="simple-promise" style="display: none;">
+	<h2>ES2015 Simple Promise Code</h2>
+	<span class="btn simple-promise-btn" style="font-size: 20px;"><i class="far fa-file-code fa-3x"></i></span>
+	<p>&gt; code5.start()</p>
+</div>
+
+<div class="note" card="complex-promise" style="display: none;">
+	<h2>ES2015 Complex Promise Code</h2>
+	<span class="btn complex-promise-btn" style="font-size: 20px;"><i class="far fa-file-code fa-3x"></i></span>
+	<p>&gt; code6.start()</p>
+</div>
+
+<div class="note" card="generator-throttling" style="display: none;">
+	<h2>Generator Throttling Code</h2>
+	<span class="btn generator-throttling-btn" style="font-size: 20px;"><i class="far fa-file-code fa-3x"></i></span>
+	<p>
+		&gt; code7.start()<br/>
+		&gt; thr.next('send this comment')
+	</p>
+</div>
+
+<div class="note" card="user-interaction" style="display: none;">
+	<h2>User Interaction Code</h2>
+	<span class="btn user-interaction-btn" style="font-size: 20px;"><i class="far fa-file-code fa-3x"></i></span>
+	<div id="drag" draggable="true" ondragstart="code8.dragStart(event)"></div>
+	<div class="drop" ondrop="code8.drop(event)" ondragover="code8.dragOver(event)"></div>
+	<div class="drop" ondrop="code8.drop(event)" ondragover="code8.dragOver(event)"></div>
+</div>
+
+<div class="note" card="event-listeners" style="display: none;">
+	<h2>Event Listeners</h2>
+	<span class="btn event-listeners-btn" style="font-size: 20px;"><i class="far fa-file-code fa-3x"></i></span>
+	<p><a id="event-listener-link" href="#">Used to connect Event Listeners to ...</a></p>
+	<p>&gt; code9.start()</p>
+</div>
+
+<div class="note" card="web-workers" style="display: none;">
+	<h2>Web Worker Code</h2>
+	<span class="btn left web-workers-sync-btn" style="font-size: 20px;">
+		<i class="far fa-file-code fa-3x"></i><br/>
+		Sync
+	</span>
+	<span class="btn web-workers-async-btn" style="font-size: 20px;">
+		<i class="far fa-file-code fa-3x"></i><br/>
+		Async
+	</span>
+	<p>
+		&gt; code10.start()<br/>
+		&gt; code10.start(true)
+	</p>
+	<p>
+		<div>Inline</div>
+		<progress id="inline-worker" value="0" max="100"></progress>
+		<div>Web Worker</div>
+		<progress id="web-worker" value="0" max="100"></progress>
+	</p>
+</div>
+
+<div class="note" card="load-timing" style="display: none;">
+	<h2>Timing Code</h2>
+	<span class="btn load-timing-btn" style="font-size: 20px;"><i class="far fa-file-code fa-3x"></i></span>
+	<p id="first-timing">Original Content (expect this to change via code)</p>
+	<p id="second-timing">Original Content (expect this to change via code)</p>
+	<span class="stamp is-approved race-condition" style="top: 75%;">Race Condition</span>
+</div>
+
+<div class="note" card="set-timeout-timer" style="display: none;">
+	<h2>setTimeout Timer</h2>
+	<span class="btn set-timeout-timer-btn" style="font-size: 20px;"><i class="far fa-file-code fa-3x"></i></span>
+	<p>
+		&gt; code12.start()<br/>
+		&gt; code12.start(10)
+	</p>
+</div>
+
+<div class="note" card="async-await" style="display: none;">
+	<h2>ES2017 Async/Await</h2>
+	<span class="btn async-await-btn" style="font-size: 20px;"><i class="far fa-file-code fa-3x"></i></span>
+	<p>&gt; code13.start()</p>
+</div>
+
+<div class="note" card="summary" style="display: none;">
+	<h2>Summary</h2>
+	<h3>... and Questions</h3>
+</div>

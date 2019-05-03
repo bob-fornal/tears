@@ -1,0 +1,206 @@
+[
+	{ "id": "start", "title": "Spoiler"
+	}, { "id": "overview", "title": "Definitions"
+	}, { "id": "engine-details", "title": "JS Engine Details",
+		"options": [{
+			"showFn": false,
+			"title": "Show Browser Queues",
+			"name": "show-browser-queues",
+			"fn": "triggerImage('queues.png', true)"
+		}, {
+			"showFn": false,
+			"title": "Hide Browser Queues",
+			"name": "hide-browser-queues",
+			"fn": "triggerImage('queues.png', false)"
+		}]
+	}, { "id": "callback-hell", "title": "Callback Hell"
+	}, { "id": "overview1", "title": "Overview 1"
+	}, { "id": "overview2", "title": "Overview2"
+	}, { "id": "thought-exercise", "title": "Thought Exercise",
+		"options": [{
+			"showFn": false,
+			"title": "Show Code",
+			"name": "thought-display",
+			"fn": "triggerView(thought.toString)"
+		}, {
+			"showFn": true,
+			"title": "Run Code",
+			"name": "thought-start",
+			"fn": "thought.start()"
+		}, {
+			"showFn": true,
+			"title": "Cleanup Code",
+			"name": "thought-end",
+			"fn": "thought.end()"
+		}]
+	}, { "id": "non-asynchronous-code", "title": "Non-Asynchronous Code",
+		"options": [{
+			"showFn": false,
+			"title": "Show Code",
+			"name": "code2-display",
+			"fn": "triggerView(code2.toString)"
+		}, {
+			"showFn": true,
+			"title": "Non-Async",
+			"name": "code2-start-non-async",
+			"fn": "code2.start()"
+		}, {
+			"showFn": true,
+			"title": "Async",
+			"name": "code2-start-async",
+			"fn": "code2.start(true)"
+		}, {
+			"showFn": true,
+			"title": "Async (debug)",
+			"name": "code2-start-async-debug",
+			"fn": "code2.debugStart()"
+		}]
+	}, { "id": "simple-network", "title": "Simple Network",
+		"options": [{
+			"showFn": false,
+			"title": "Show Code",
+			"name": "code3-display",
+			"fn": "triggerView(code3.toString)"
+		}, {
+			"showFn": true,
+			"title": "Start Simple Network",
+			"name": "code3-start-simple-network",
+			"fn": "code3.start()"
+		}]
+	}, { "id": "complex-network", "title": "Complex Network",
+		"options": [{
+			"showFn": false,
+			"title": "Show Code",
+			"name": "code4-display",
+			"fn": "triggerView(code4.toString)"
+		}, {
+			"showFn": true,
+			"title": "Start Complex Network",
+			"name": "code4-start-complex-network",
+			"fn": "code4.start()"
+		}]
+	}, { "id": "simple-promise", "title": "ES2015 Simple Promise",
+		"options": [{
+			"showFn": false,
+			"title": "Show Code",
+			"name": "code5-display",
+			"fn": "triggerView(code5.toString)"
+		}, {
+			"showFn": true,
+			"title": "Start Simple Promise",
+			"name": "code5-start-simple-promise",
+			"fn": "code5.start()"
+		}]
+	}, { "id": "complex-promise", "title": "ES2015 Complex Promise",
+		"options": [{
+			"showFn": false,
+			"title": "Show Code",
+			"name": "code6-display",
+			"fn": "triggerView(code6.toString)"
+		}, {
+			"showFn": true,
+			"title": "Start Complex Promise",
+			"name": "code6-start-complex-promise",
+			"fn": "code6.start()"
+		}]
+	}, { "id": "generator-throttling", "title": "Generator Throttling",
+		"options": [{
+			"showFn": false,
+			"title": "Show Code",
+			"name": "code7-display",
+			"fn": "triggerView(code7.toString)"
+		}, {
+			"showFn": true,
+			"title": "Throttle (start)",
+			"name": "code7-throttle-start",
+			"fn": "code7.start()"
+		}, {
+			"showFn": true,
+			"title": "Throttle (repeat)",
+			"name": "code7-throttle-repeat",
+			"fn": "thr.next('send a comment')"
+		}]
+	}, { "id": "user-interaction", "title": "User Interaction",
+		"options": [{
+			"showFn": false,
+			"title": "Show Code",
+			"name": "code8-display",
+			"fn": "triggerView(code8.toString)"
+		}]
+	}, { "id": "event-listeners", "title": "Event Listeners",
+		"options": [{
+			"showFn": false,
+			"title": "Show Code",
+			"name": "code9-display",
+			"fn": "triggerView(code9.toString)"
+		}, {
+			"showFn": true,
+			"title": "Start Event Listeners",
+			"name": "code9-event-listeners-start",
+			"fn": "code9.start()"
+		}]
+	}, { "id": "web-workers", "title": "Web Workers",
+		"options": [{
+			"showFn": false,
+			"title": "Show Sync Code",
+			"name": "code10-sync-display",
+			"fn": "triggerView(code10.toString)"
+		}, {
+			"showFn": false,
+			"title": "Show Async Code",
+			"name": "code10-async-display",
+			"fn": "triggerView(code10.toString, true)"
+		}, {
+			"showFn": true,
+			"title": "Start Sync",
+			"name": "code10-sync-start",
+			"fn": "code10.start()"
+		}, {
+			"showFn": true,
+			"title": "Start Async",
+			"name": "code10-async-start",
+			"fn": "code10.start(true)"
+		}]
+	}, { "id": "load-timing", "title": "Load Timing",
+		"options": [{
+			"showFn": false,
+			"title": "Show Code",
+			"name": "code11-load-timing-display",
+			"fn": "triggerView(code11.toString)"
+		}]
+	}, { "id": "set-timeout-timer", "title": "Set Timeout Timer",
+		"options": [{
+			"showFn": false,
+			"title": "Show Code",
+			"name": "code12-display",
+			"fn": "triggerView(code12.toString)"
+		}, {
+			"showFn": true,
+			"title": "Start Zero MS",
+			"name": "code12-set-timeout-zero-start",
+			"fn": "code12.start()"
+		}, {
+			"showFn": true,
+			"title": "Start 10 MS",
+			"name": "code12-set-timeout-ten-start",
+			"fn": "code12.start(10)"
+		}]
+	}, { "id": "async-await", "title": "ES2017 Async/Await",
+		"options": [{
+			"showFn": false,
+			"title": "Show Code",
+			"name": "code13-async-await-display",
+			"fn": "triggerView(code13.toString)"
+		}, {
+			"showFn": true,
+			"title": "Start: Resolve",
+			"name": "code13-async-await-start-resolve",
+			"fn": "code13.start()"
+		}, {
+			"showFn": true,
+			"title": "Start: Reject",
+			"name": "code13-async-await-start-reject",
+			"fn": "code13.start(false)"
+		}]
+	}, { "id": "summary", "title": "Summary and Questions" }
+]

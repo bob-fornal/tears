@@ -1,0 +1,280 @@
+h2, h3 {
+	margin-bottom: 0.5em;
+	margin-top: 0;
+}
+
+body {
+	background-color: slategray;
+	font-family: Arial;
+	margin: 16px;
+	user-select: none;	
+}
+
+.main {
+	background: url(images/drops3.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+	border: 3px solid silver;
+	box-sizing: border-box;
+	color: white;
+	height: 100%;
+	padding: 16px;
+	width: 100%;
+}
+.main.fsm05 {
+	font-size: 0.9em;	
+}
+.main.fsm04 {
+	font-size: 1.0em;	
+}
+.main.fsm03 {
+	font-size: 1.2em;	
+}
+.main.fsm02 {
+	font-size: 1.3em;	
+}
+.main.fsm01 {
+	font-size: 1.4em;	
+}
+
+.main.fs00 {
+	font-size: 1.5em;	
+}
+
+.main.fsp01 {
+	font-size: 1.6em;	
+}
+.main.fsp02 {
+	font-size: 2.7em;	
+}
+.main.fsp03 {
+	font-size: 2.8em;	
+}
+.main.fsp04 {
+	font-size: 2.9em;	
+}
+.main.fsp05 {
+	font-size: 3.0em;	
+}
+
+.main .font-size {
+	position: fixed;
+	right: 5%;
+	top: 5%;
+}
+.main .font-size .up,
+.main .font-size .down,
+.main .font-size .reset,
+.main .navigation .previous,
+.main .navigation .next {
+	color: lightgreen;
+	cursor: pointer;
+}
+.main .font-size .up.disabled,
+.main .font-size .down.disabled,
+.main .font-size .reset.disabled,
+.main .navigation .previous.disabled,
+.main .navigation .next.disabled {
+	color: silver;
+	cursor: default;
+}
+
+.main .font-size .up:hover:not(.disabled),
+.main .font-size .down:hover:not(.disabled),
+.main .font-size .reset:hover:not(.disabled),
+.main .navigation .previous:hover:not(.disabled),
+.main .navigation .next:hover:not(.disabled) {
+	color: olivedrab;
+}
+
+.main .left-content {
+	display: block;
+	width: 35%;
+}
+
+.main .description {
+	font-size: 1em;
+	margin: 0 10% 0 1em;
+}
+
+.main button {
+	font-weight: bold;
+	padding: 0.5em 2em;
+}
+
+.changeBackground {
+	background-color: red;
+}
+.changeColor {
+	color: white;
+}
+
+.hide {
+	display: none;
+}
+
+.main .navigation {
+	bottom: 2%;
+	color: lightgreen;
+	position: fixed;
+	right: 5%;
+}
+.main .navigation .position {
+	position: relative;
+}
+
+.main .notes {
+	background-color: lightgreen;
+    border: 2px solid black;
+    color: black;
+    height: 70%;
+    left: 15%;
+    overflow: hidden;
+    position: fixed;
+    top: 20%;
+    width: 80%;
+    z-index: 10;
+}
+.main .notes .note {
+	border: 2px solid white;
+	box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.25);
+	box-sizing: border-box;
+	height: 100%;
+	padding: 1em 2em;
+	position: absolute;
+	width:100%;
+	z-index: 20;
+}
+.main .notes .note.slide {
+	transition: 1s ease;
+	z-index: 30;
+}
+.main .notes .note h2 {
+	max-width: 90%;
+}
+
+.main .callback-hell {
+	position: absolute;
+	right: 20px;
+	top: 60px;
+}
+.main .race-condition {
+	font-size: 1em !important;
+	position: absolute;
+	right: 20px;
+	top: 60px;
+}
+
+.main .stamp {
+	transform: rotate(12deg);
+	color: #555;
+	font-size: 2rem;
+	font-weight: 700;
+	border: 0.25rem solid #555;
+	display: inline-block;
+	padding: 0.25rem 1rem;
+	text-transform: uppercase;
+	border-radius: 1rem;
+	font-family: 'Courier';
+	-webkit-mask-image: url('images/grunge.png');
+	-webkit-mask-size: 944px 604px;
+	mix-blend-mode: multiply;
+}
+
+.main .is-approved {
+	color: #8888ff;
+	border: 1rem solid #8888ff;
+	-webkit-mask-position: 13rem 6rem;
+	transform: rotate(14deg);
+	border-radius: 20px;
+}
+
+.fas.fa-circle.small {
+	font-size: 0.4em;
+	line-height: 1.2;
+	position: relative;
+	top: 0.8em;
+}
+.fas.fa-circle.mid {
+	font-size: 0.6em;
+	margin-bottom: -0.4em;
+	margin-top: -0.3em;
+	position: relative;
+}
+.fas.fa-circle.small.red {
+	color: red;
+}
+
+#drag {
+	background-color: red;
+	height: 50px;
+	margin-bottom: 5px;
+	width: 50px;
+}
+.drop {
+	border: 1px solid black;
+	height: 60px;
+	margin-bottom: 5px;
+	width: 60px;
+}
+
+.btn {
+	position: absolute;
+	right: 40px;
+	text-align: center;
+	top: 40px;
+}
+.btn.left {
+	right: 120px;
+}
+.btn:hover {
+	color: seagreen;
+	cursor: pointer;
+}
+
+progress {
+	width: 90%;
+	height: 20px;
+	-webkit-appearance: none;
+}
+progress::-webkit-progress-bar {
+	background: lightgray;
+	border: 1px solid gray;
+	border-radius: 50px;
+}
+progress::-webkit-progress-value {
+	background: #31C6F7;
+	border-radius: 50px;
+}
+
+.image-wrapper {
+	background-color: black;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+	z-index: 1000;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.image-container {
+	display: block;
+	margin: 0 auto;
+}
+.image-close {
+	color: lightgreen;
+	cursor: pointer;
+	position: absolute;
+	right: 2em;
+	top: 2em;
+}
+.image-close:hover {
+	color: seagreen;
+}

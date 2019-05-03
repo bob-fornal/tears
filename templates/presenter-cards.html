@@ -1,0 +1,249 @@
+
+
+<script id="start" type="text/x-custom-template">
+<div class="details" card="start">
+	<div><span class='bold'>Spoiler</span></div>
+	<div><span class='pad-left-1em'>At it's core, JavaScript is a synchronous, blocking, single-threaded language.</span></div>
+	<div><span class='pad-left-1em'>This means that only one thing can happen at a time.</span></div>
+	<div><br/></div>
+	<div><span class='pad-left-1em'>When people say that JavaScript is an <u>asynchronous</u> language,</span></div>
+	<div><span class='pad-left-1em'>what they mean is that you can manipulate JavaScript to behave asynchronously.</span></div>
+</div>		
+</script>
+
+<script id="overview" type="text/x-custom-template">
+<div class="details" card="overview">
+    <div><span class='bold'>Parallelism:</span></div>
+    <div><span class='pad-left-1em'>Multi-thread processing and scheduling (same time).</span></div>
+    <div><span class='bold'>Asynchronous:</span></div>
+    <div><span class='pad-left-1em'>Single-thread and event loop.</span></div>
+    <div><br/></div>
+    <div><span>Managed by ...</span></div>
+    <div><span class='bold'>Cooperative Concurrency:</span></div>
+    <div><span class='pad-left-1em'>Higher-level tasks that can occur withing the same time frame.</div>
+    <div><span class='pad-left-1em'>Code in the queue has some level of control over what happens next with the queue.</div>
+    <div><span class='pad-left-1em'>HOPE FOR ...</div>
+    <div><span class='bold'>Contention:</span></div>
+    <div><span class='pad-left-1em'>Multiple things need to occur at the same instant.</div>
+</div>
+</script>
+
+<script id="engine-details" type="text/x-custom-template">
+<div class="details" card="engine-details">
+    <div>These are not a part of the JS Engine; Browser or NodeJS runtime environment:</div>
+	<div><br/></div>
+	<div>setTimeout</div>
+	<div>Event Loop</div>
+	<div>Web APIs</div>
+	<div>Message Queue</div>
+    <div>Task Queue</div>
+</div>
+</script>
+
+<script id="callback-hell" type="text/x-custom-template">
+<div class="details" card="callback-hell">
+	<div><span class='bold'>\"Pyramid of Doom\":</span></div>
+	<div><span class='pad-left-1em'>Symptom of the problems, not the real issue.</span></div>
+	<div><span class='bold'>Inversion of Control:</span></div>
+	<div><span class='pad-left-1em'>TRUST POINT when callback is passed ... does it behave as expected.</span></div>
+	<div><span class='bold'>REASONable:</span></div>
+	<div><span class='pad-left-1em'>Temporal Dependency requires nesting; non-linear thinking.</span></div>
+	<div><br/></div>
+	<div>Considerations ...</div>
+	<div><span class='bold'>Coordination of Data:</span></div>
+	<div><span class='pad-left-1em'>At higher level to track data across callbacks.</span></div>
+	<div><span class='bold'>Split Callbacks:</span></div>
+	<div><span class='pad-left-1em'>Separating out success and errors.</span></div>
+	<div><span class='bold'>Error First:</span></div>
+	<div><span class='pad-left-1em'>Same trust issues as Split Callback.</span></div>
+	<div><br/></div>	<div><span class='bold'>Promise Hell ...</span></div>
+	<div><span class='pad-left-1em'>Flow control with bad style.</span></div>
+	<div><span class='pad-left-1em'>Nested promises rather than vertical chaining.</span></div>
+</div>
+</script>
+
+<script id="overview1" type="text/x-custom-template">
+<div class="details" card="overview1">
+	<div>Thought Exercise</div>
+	<div>Synchronous Code</div>
+	<div>Non Asynchronous Code</div>
+	<div>Simple Network Code</div>
+	<div>Complex Network Code</div>
+	<div>ES2015 Simple Promise Code</div>
+	<div>ES2015 Complex Promise Code</div>
+	<div><span class='italic pad-left-1em'>... continued</span></div>
+</div>
+</script>
+
+<script id="overview2" type="text/x-custom-template">
+<div class="details" card="overview2">
+	<div><span class='italic pad-left-1em'>... continued</span></div>
+	<div>Generator Throttling Code</div>
+	<div>User Interaction Code</div>
+	<div>Event Listeners</div>
+	<div>Web Worker Code</div>
+	<div>Timing Code (Race Conditions)</div>
+	<div>setTimeout Timer</div>
+	<div>ES2017 Async/Await</div>
+</div>
+</script>
+
+<script id="thought-exercise" type="text/x-custom-template">
+<div class="details" card="thought-exercise">
+	<div><span class='bold'>What will the following code do?</span></div>
+	<div><span class='italic pad-left-1em'>const start = Date.now();</span></div>
+	<div><span class='italic pad-left-1em'>while(Date.now() < start + this._time) {};</span></div>
+	<div><br/></div>
+	<div>&gt; thought.start()</div>
+	<div>&gt; thought.end()</div>
+</div>
+</script>
+
+<script id="non-asynchronous-code" type="text/x-custom-template">
+<div class="details" card="non-asynchronous-code">
+	<div><span class='bold'>Note:</span> <span>Show debugging here ...</span></div>
+	<div><br/></div>
+	<div>&gt; code2.start()</div>
+	<div>&gt; code2.start(true)</div>
+	<div>&gt; code2.debugStart()</div>
+</div>
+</script>
+
+<script id="simple-network" type="text/x-custom-template">
+<div class="details" card="simple-network">
+	<div>Callbacks</div>
+	<div><span class='pad-left-1em'>Seams that rip across the application; some bootstrapping may not be complete when needed.</span></div>
+	<div><span class='pad-left-1em'>Issues dealing with errors in logic.</span></div>
+	<div><span class='pad-left-1em'>Difficult to understand: Nesting, never called, called repeatedly, called synchronously (blocking)</span></div>
+	<div><span class='pad-left-1em'></span></div>
+	<div><br/></div>
+	<div>Simple network, simulated by 10 second timeout.</div>
+	<div><br/></div>
+	<div>&gt; code3.start()</div>
+</div>
+</script>
+
+<script id="complex-network" type="text/x-custom-template">
+<div class="details" card="complex-network">
+	<div>Complex network, simulated by nested timeouts.</div>
+	<div><br/></div>
+	<div>&gt; code4.start()</div>
+</div>
+</script>
+
+<script id="simple-promise" type="text/x-custom-template">
+<div class="details" card="simple-promise">
+	<div><span class='bold'>Completion and Error Events</span> handle inversion of control issue.</div>
+	<div><br/></div>
+	<div><span class='bold'>Promise Trust</span></div>
+	<div><span class='pad-left-1em'>1. Only resolve once</span></div>
+	<div><span class='pad-left-1em'>2. Either success or error</span></div>
+	<div><span class='pad-left-1em'>3. Messages passed/kept</span></div>
+	<div><span class='pad-left-1em'>4. Exceptions become errors</span></div>
+	<div><span class='pad-left-1em'>5. Immutable once resolved</span></div>
+	<div><br/></div>
+	<div><span class='bold'>Simple async with timeout and promise.</span> Issues:</div>
+	<div><span class='pad-left-1em'>Passing values</span></div>
+	<div><span class='pad-left-1em'>Nested syntax</span></div>
+	<div><span class='pad-left-1em'>Handling failure ...</span></div>
+	<div><br/></div>
+	<div>Also called: Promises, future, deferred.</div>
+	<div><br/></div>
+	<div>&gt; code5.start()</div>
+</div>
+</script>
+
+<script id="complex-promise" type="text/x-custom-template">
+<div class="details" card="complex-promise">
+	<div>Complex async with timeout and chained promises.</div>
+	<div><span class='italic pad-left-1em'>Modular and readable, but slightly wonky.</span></div>
+	<div><br/></div>
+	<div>&gt; code6.start()</div>
+</div>
+</script>
+
+<script id="generator-throttling" type="text/x-custom-template">
+<div class="details" card="generator-throttling">
+	<div>Cooperative Concurrency versus <span class='bold'>Preemptive Concurrency</span>.</div>
+	<div><span class='pad-left-1em'>Syntactic form of a state-machine.</span></div>
+	<div><span class='pad-left-1em'>About solving the \"reasoning about\" issue.</span></div>
+	<div><span class='pad-left-1em'>Allow non run-to-completion behavior.  Localized blocking only.</span></div>
+	<div><span class='pad-left-1em'>Generators return an iterator.</span></div>
+	<div><br/></div>
+	<div>&gt; code7.start()</div>
+	<div>&gt; thr('send this comment')</div>
+</div>
+</script>
+
+<script id="user-interaction" type="text/x-custom-template">
+<div class="details" card="user-interaction">
+	<div>Drag and Drop are active ..."</div>
+</div>
+</script>
+
+<script id="event-listeners" type="text/x-custom-template">
+<div class="details" card="event-listeners">
+	<div>Event Listeners are Synchronous (not async)</div>
+	<div><br/></div>
+	<div>Link that the click event is connected to</div>
+	<div>&gt; code9.start()</div>
+</div>
+</script>
+
+<script id="web-workers" type="text/x-custom-template">
+<div class="details" card="web-workers">
+	<div><span class='bold'>Number of Workers</span></div>
+	<div><span class="pad-left-1em">The number varies from browser to browser. Optimal seems to be around 20.</span></div>
+	<div><br/></div>
+	<div><span class='bold'>Inline</span></div>
+	<div>&gt; code10.start()</div>
+	<div><br/></div>
+	<div><span class='bold'>Web Worker<span></div>
+	<div>&gt; code10.start(true)</div>
+</div>
+</script>
+
+<script id="load-timing" type="text/x-custom-template">
+<div class="details" card="load-timing">
+	<div>Original Content (expect this to change via code)</div>
+	<div>Changed Content Correctly (via code)</div>
+</div>
+</script>
+
+<script id="set-timeout-timer" type="text/x-custom-template">
+<div class="details" card="set-timeout-timer">
+	<div><span class='bold'>How long is a setTimeout delay?</span></div>
+	<div><span class='italic pad-left-1em'>(Careful with delay tested ... 1000 iterations)</span></div>
+	<div><br/></div>
+	<div>&gt; code12.start()</div>
+	<div>&gt; code12.start(10)</div>
+</div>
+</script>
+
+<script id="async-await" type="text/x-custom-template">
+<div class="details" card="async-await">
+	<div>Expands on use of Promises.</div>
+	<div>Writing asyncronous code that looks and feels synchronous.</div>
+	<div>Cleans up the syntax, making it more readable.</div>
+	<div><br/></div>
+	<div>&gt; code13.start()</div>
+	<div>&gt; code13.start(false)</div>
+</div>
+</script>
+
+<script id="summary" type="text/x-custom-template">
+<div class="details" card="summary">
+	<div>We've examined:</div>
+	<div><br/></div>
+	<div><span class='pad-left-1em'>Sync and Async code using callbacks.</span></div>
+	<div><span class='italic pad-left-1em'>... debugging</span></div>
+	<div><br/></div>
+	<div><span class='pad-left-1em'>ES2015 Promise(s) Chains.</span></div>
+	<div><span class='pad-left-1em'>Generators (throttling)</span></div>
+	<div><span class='pad-left-1em'>User Interaction.</span></div>
+	<div><span class='pad-left-1em'>Event Listeners (syncronous).</span></div>
+	<div><span class='pad-left-1em'>Web Workers.</span></div>
+	<div><span class='pad-left-1em'>Load Timing.</span></div>
+	<div><span class='pad-left-1em'>ES2017 Async/Await.</span></div>
+</div>
+</script>
