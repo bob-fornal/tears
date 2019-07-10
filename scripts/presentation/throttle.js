@@ -9,7 +9,7 @@ export function * throttle(func, time) {
 
 export class GeneratorThrottle {
 	
-	constuctor() {};
+	constructor() {};
 	
 	start = () => {
 		thr = throttle(console.log, 3000);
