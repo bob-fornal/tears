@@ -21,7 +21,7 @@ export class SetTimeoutTimer {
 	
 	testDelay = () => {
 		if (this._repetitions++ > this._totalRepetitions) {
-			console.log(`Requested Delay: ${this._delay}, Acual Average Delay: ${this.getActualDelay()}`);
+			console.log(`Requested Delay: ${this._delay}, Actual Average Delay: ${this.getActualDelay()}`);
 			return;
 		}
 		this.iterate();
