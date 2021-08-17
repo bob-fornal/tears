@@ -3,7 +3,10 @@ h2, h3 {
 	margin-top: 0;
 }
 h3 {
-    margin-left: 1em;
+	margin-left: 1em;
+}
+h3.smaller {
+	font-size: smaller;
 }
 
 body {
@@ -280,4 +283,8 @@ progress::-webkit-progress-value {
 }
 .image-close:hover {
 	color: seagreen;
+}
+
+.recruiting {
+	height: 40vh;
 }
