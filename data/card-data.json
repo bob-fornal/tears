@@ -1,5 +1,6 @@
 [
 	{ "id": "start", "title": "Spoiler"
+	}, { "id": "about-me", "title": "About Me"	
 	}, { "id": "100DaysOfCode", "title": "100DaysOfCode"	
 	}, { "id": "overview", "title": "Definitions"
 	}, { "id": "engine-details", "title": "JS Engine Details",
