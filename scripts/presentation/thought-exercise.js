@@ -1,5 +1,5 @@
 export class ThoughtExercise {
-	_time = 10000;
+	_time = 5000;
 	_wrapper = null
 	
 	constructor() {};
