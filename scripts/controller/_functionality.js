@@ -55,21 +55,21 @@ $(document).ready(() => {
 			
 			up: () => {
 				if (!upButton.hasClass('disabled')) {
-					fsChannel.postMessage('trigger-up');				
+					fsChannel.postMessage('trigger-up');
 				}
 			},
 			reset: () => {
-				fsChannel.postMessage('trigger-reset');			
+				fsChannel.postMessage('trigger-reset');
 			},
 			down: () => {
 				if (!downButton.hasClass('disabled')) {
-					fsChannel.postMessage('trigger-down');				
+					fsChannel.postMessage('trigger-down');
 				}
 			},
 	
 			previous: () => {
 				if (!previousButton.hasClass('disabled')) {
-					pnChannel.postMessage('trigger-previous');				
+					pnChannel.postMessage('trigger-previous');
 				}
 			},
 			next: () => {

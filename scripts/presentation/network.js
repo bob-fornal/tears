@@ -1,5 +1,5 @@
 export class SimpleNetwork {
-	_time = 10000;
+	_time = 5000;
 	
 	constructor() {};
 	
